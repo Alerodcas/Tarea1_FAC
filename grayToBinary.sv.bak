@@ -1,0 +1,10 @@
+module grayToBinary(    
+    input logic [2:0] gray,      
+	 output logic [2:0] bcd
+);
+
+	bcd[2] = gray[2];
+	bcd[1] = gray[2] ^ gray[1];
+	bcd[2] = gray[2] ^ gray[1] ^ gray[0];
+
+endmodule

@@ -1,0 +1,7 @@
+module Tarea1()
+
+logic [2:0] bcd;
+
+grayToBinary graytobinary(000, bcd);
+
+endmodule
