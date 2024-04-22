@@ -1,10 +1,25 @@
 |Tarea1
-gray[0] => gray[0].IN1
-gray[1] => gray[1].IN1
-gray[2] => gray[2].IN1
+distance[0] => distance[0].IN1
+distance[1] => distance[1].IN1
+distance[2] => distance[2].IN1
+distance[3] => distance[3].IN1
+distance[4] => distance[4].IN1
 excess[0] << binaryToExcess3:binaryExcess.excess
 excess[1] << binaryToExcess3:binaryExcess.excess
 excess[2] << binaryToExcess3:binaryExcess.excess
+
+
+|Tarea1|distanceToGray:distanceGray
+distance[0] => ~NO_FANOUT~
+distance[1] => ~NO_FANOUT~
+distance[2] => Decoder1.IN1
+distance[3] => Decoder0.IN1
+distance[3] => Decoder1.IN0
+distance[4] => Decoder0.IN0
+distance[4] => gray_code[2].DATAIN
+gray_code[0] <= gray_code.DB_MAX_OUTPUT_PORT_TYPE
+gray_code[1] <= gray_code.DB_MAX_OUTPUT_PORT_TYPE
+gray_code[2] <= distance[4].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Tarea1|grayToBinary:grayBinary

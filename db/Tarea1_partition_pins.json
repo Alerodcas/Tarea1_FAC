@@ -16,15 +16,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "gray[0]",
-					"strict" : false
-				},
-				{
-					"name" : "gray[1]",
-					"strict" : false
-				},
-				{
-					"name" : "gray[2]",
+					"name" : "distance[2]",
 					"strict" : false
 				}
 			]

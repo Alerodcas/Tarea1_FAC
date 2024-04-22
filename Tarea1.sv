@@ -1,10 +1,17 @@
 module Tarea1(
-    input logic [2:0] gray,  
+    input wire [4:0] distance,  
 	 output logic [2:0] excess
 );
 
+logic [2:0] gray_code;
+
+	distanceToGray distanceGray (
+			  .distance(distance), 
+			  .gray_code(gray_code)
+		 );
+
 	grayToBinary grayBinary (
-			  .gray(gray), 
+			  .gray(gray_code), 
 			  .bcd(bcd)
 		 );
 	 

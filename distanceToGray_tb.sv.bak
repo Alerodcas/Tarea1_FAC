@@ -1,0 +1,37 @@
+`timescale 1ns / 1ps
+
+module distanceToGray_tb;
+
+    // Testbench variables
+    reg [4:0] distance; // Input to the DUT
+    wire [2:0] gray_code; // Output from the DUT
+
+    // Instantiate the Device Under Test (DUT)
+    distance_to_gray dut (
+        .distance(distance),
+        .gray_code(gray_code)
+    );
+
+    // Test sequence
+    initial begin
+        // Initialize distance
+        distance = 0;
+        // Wait for 10 time units
+        #10;
+
+        // Test various distances
+        for (int i = 0; i <= 30; i++) begin
+            distance = i;
+            #10; // Wait for 10 time units between changes
+        end
+
+        // Finish the simulation
+        $finish;
+    end
+
+    // Monitor changes
+    initial begin
+        $monitor("Time = %t, Distance = %d, Gray Code = %b", $time, distance, gray_code);
+    end
+
+endmodule
