@@ -1,7 +1,33 @@
 |Tarea1
-clk => data_out~reg0.CLK
-reset => data_out~reg0.ACLR
-data_in => data_out~reg0.DATAIN
-data_out <= data_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+gray[0] => gray[0].IN1
+gray[1] => gray[1].IN1
+gray[2] => gray[2].IN1
+excess[0] << binaryToExcess3:binaryExcess.excess
+excess[1] << binaryToExcess3:binaryExcess.excess
+excess[2] << binaryToExcess3:binaryExcess.excess
+
+
+|Tarea1|grayToBinary:grayBinary
+gray[0] => bcd.IN1
+gray[1] => bcd.IN0
+gray[2] => bcd.IN1
+gray[2] => bcd[2].DATAIN
+bcd[0] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd.DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= gray[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tarea1|binaryToExcess3:binaryExcess
+bcd[0] => excess.IN0
+bcd[0] => excess.IN0
+bcd[0] => excess[0].DATAIN
+bcd[1] => excess.IN0
+bcd[1] => excess.IN1
+bcd[1] => excess.IN1
+bcd[2] => excess.IN1
+bcd[2] => excess.IN1
+excess[0] <= bcd[0].DB_MAX_OUTPUT_PORT_TYPE
+excess[1] <= excess.DB_MAX_OUTPUT_PORT_TYPE
+excess[2] <= excess.DB_MAX_OUTPUT_PORT_TYPE
 
 

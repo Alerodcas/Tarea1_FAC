@@ -1,0 +1,119 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/alero/Documents/GitHub/Tarea1_FAC/simulation/modelsim
+vbinaryToExcess3
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1713749727
+!i10b 1
+!s100 If<eme2M2<3ldeT:z2KES0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IhgnQMO741PMzI_o?l;ncc2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1713745147
+8C:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3.sv
+FC:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3.sv
+!i122 2
+Z5 L0 1 10
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1713749727.000000
+!s107 C:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alero/Documents/GitHub/Tarea1_FAC|C:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Users/alero/Documents/GitHub/Tarea1_FAC
+Z10 tCvgOpt 0
+nbinary@to@excess3
+vbinaryToExcess3_tb
+R1
+!s110 1713749728
+!i10b 1
+!s100 _S0f8gaOAW1JYL>c:LfTG3
+R3
+ID]6;R^32@;9i6LS=5Ac<k2
+R4
+S1
+R0
+w1713748913
+8C:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3_tb.sv
+FC:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3_tb.sv
+!i122 3
+L0 3 44
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alero/Documents/GitHub/Tarea1_FAC|C:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3_tb.sv|
+!i113 1
+R8
+R9
+R10
+nbinary@to@excess3_tb
+vgrayToBinary
+R1
+R2
+!i10b 1
+!s100 K@GAh3QHoEFJOcI5o9VVk3
+R3
+IC[Of<ML`8O_KfVTRoV83:0
+R4
+S1
+R0
+w1713746100
+8C:/Users/alero/Documents/GitHub/Tarea1_FAC/grayToBinary.sv
+FC:/Users/alero/Documents/GitHub/Tarea1_FAC/grayToBinary.sv
+!i122 0
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/alero/Documents/GitHub/Tarea1_FAC/grayToBinary.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alero/Documents/GitHub/Tarea1_FAC|C:/Users/alero/Documents/GitHub/Tarea1_FAC/grayToBinary.sv|
+!i113 1
+R8
+R9
+R10
+ngray@to@binary
+vTarea1
+R1
+R2
+!i10b 1
+!s100 ClKVMLNglkB[A`[EkJTh33
+R3
+I548CH24b0DF9GggEiMc6I0
+R4
+S1
+R0
+w1713747582
+8C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv
+FC:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv
+!i122 1
+L0 1 16
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/alero/Documents/GitHub/Tarea1_FAC|C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv|
+!i113 1
+R8
+R9
+R10
+n@tarea1

@@ -1,0 +1,10 @@
+module binaryToExcess3(    
+    input logic [2:0] bcd,      
+	 output logic [2:0] excess
+);
+
+	excess bcd[2] = ~bcd[1](bcd[2]^bcd[0)||(~bcd[2]&&bcd[1]);
+	excess bcd[1] = ~(bcd[1]^bcd[0]);
+	excess bcd[0] = ~bcd[0];
+
+endmodule
