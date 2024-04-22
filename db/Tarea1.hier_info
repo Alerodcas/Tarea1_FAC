@@ -4,9 +4,17 @@ distance[1] => distance[1].IN1
 distance[2] => distance[2].IN1
 distance[3] => distance[3].IN1
 distance[4] => distance[4].IN1
-excess[0] << binaryToExcess3:binaryExcess.excess
-excess[1] << binaryToExcess3:binaryExcess.excess
-excess[2] << binaryToExcess3:binaryExcess.excess
+motorSig <= motorSignal:motor.signal
+excess[0] <= excess[0].DB_MAX_OUTPUT_PORT_TYPE
+excess[1] <= excess[1].DB_MAX_OUTPUT_PORT_TYPE
+excess[2] <= excess[2].DB_MAX_OUTPUT_PORT_TYPE
+seg[0] <= segmentOutput:segment.seg
+seg[1] <= segmentOutput:segment.seg
+seg[2] <= segmentOutput:segment.seg
+seg[3] <= segmentOutput:segment.seg
+seg[4] <= segmentOutput:segment.seg
+seg[5] <= segmentOutput:segment.seg
+seg[6] <= segmentOutput:segment.seg
 
 
 |Tarea1|distanceToGray:distanceGray
@@ -20,6 +28,13 @@ distance[4] => gray_code[2].DATAIN
 gray_code[0] <= gray_code.DB_MAX_OUTPUT_PORT_TYPE
 gray_code[1] <= gray_code.DB_MAX_OUTPUT_PORT_TYPE
 gray_code[2] <= distance[4].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tarea1|motorSignal:motor
+gray[0] => ~NO_FANOUT~
+gray[1] => signal.IN0
+gray[2] => signal.IN1
+signal <= signal.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Tarea1|grayToBinary:grayBinary
@@ -44,5 +59,20 @@ bcd[2] => excess.IN1
 excess[0] <= bcd[0].DB_MAX_OUTPUT_PORT_TYPE
 excess[1] <= excess.DB_MAX_OUTPUT_PORT_TYPE
 excess[2] <= excess.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Tarea1|segmentOutput:segment
+num[0] => Decoder0.IN2
+num[1] => Decoder0.IN1
+num[1] => Decoder1.IN1
+num[2] => Decoder0.IN0
+num[2] => Decoder1.IN0
+seg[0] <= segments1.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

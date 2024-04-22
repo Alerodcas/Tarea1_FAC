@@ -1,8 +1,8 @@
 
 module segmentOutput(input [2:0] num, //Numero en exceso-3
-    output [6:0] seg);
+    output wire [6:0] seg);
 
-	reg[6:0] segments1;
+	wire[6:0] segments1;
 
 	assign seg = segments1;
 	
