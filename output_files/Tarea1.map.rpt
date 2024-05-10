@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Tarea1
-Sun Apr 21 20:32:10 2024
-Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Thu Apr 25 15:03:09 2024
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
 ---------------------
@@ -14,18 +14,16 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "binaryToExcess3:binaryExcess"
- 10. Port Connectivity Checks: "grayToBinary:grayBinary"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -42,27 +40,27 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Apr 21 20:32:10 2024          ;
-; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
-; Revision Name                   ; Tarea1                                         ;
-; Top-level Entity Name           ; Tarea1                                         ;
-; Family                          ; Cyclone V                                      ;
-; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 0                                              ;
-; Total pins                      ; 16                                             ;
-; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 0                                              ;
-; Total DSP Blocks                ; 0                                              ;
-; Total HSSI RX PCSs              ; 0                                              ;
-; Total HSSI PMA RX Deserializers ; 0                                              ;
-; Total HSSI TX PCSs              ; 0                                              ;
-; Total HSSI PMA TX Serializers   ; 0                                              ;
-; Total PLLs                      ; 0                                              ;
-; Total DLLs                      ; 0                                              ;
-+---------------------------------+------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Apr 25 15:03:09 2024       ;
+; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                   ; Tarea1                                      ;
+; Top-level Entity Name           ; Tarea1                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 14                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -157,8 +155,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 10          ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -168,54 +166,55 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
-; grayToBinary.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/alero/Documents/GitHub/Tarea1_FAC/grayToBinary.sv    ;         ;
-; Tarea1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv          ;         ;
-; binaryToExcess3.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3.sv ;         ;
-; segmentOutput.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/alero/Documents/GitHub/Tarea1_FAC/segmentOutput.sv   ;         ;
-; distanceToGray.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/alero/Documents/GitHub/Tarea1_FAC/distanceToGray.sv  ;         ;
-; motorSignal.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/alero/Documents/GitHub/Tarea1_FAC/motorSignal.sv     ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                            ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
+; Tarea1.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/manue/Escritorio/Tarea1_FAC/Tarea1.sv          ;         ;
+; binaryToExcess3.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/manue/Escritorio/Tarea1_FAC/binaryToExcess3.sv ;         ;
+; segmentOutput.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/manue/Escritorio/Tarea1_FAC/segmentOutput.sv   ;         ;
+; motorSignal.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/manue/Escritorio/Tarea1_FAC/motorSignal.sv     ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                     ;
-+---------------------------------------------+-------------------+
-; Resource                                    ; Usage             ;
-+---------------------------------------------+-------------------+
-; Estimate of Logic utilization (ALMs needed) ; 0                 ;
-;                                             ;                   ;
-; Combinational ALUT usage for logic          ; 0                 ;
-;     -- 7 input functions                    ; 0                 ;
-;     -- 6 input functions                    ; 0                 ;
-;     -- 5 input functions                    ; 0                 ;
-;     -- 4 input functions                    ; 0                 ;
-;     -- <=3 input functions                  ; 0                 ;
-;                                             ;                   ;
-; Dedicated logic registers                   ; 0                 ;
-;                                             ;                   ;
-; I/O pins                                    ; 16                ;
-;                                             ;                   ;
-; Total DSP Blocks                            ; 0                 ;
-;                                             ;                   ;
-; Maximum fan-out node                        ; distance[2]~input ;
-; Maximum fan-out                             ; 7                 ;
-; Total fan-out                               ; 24                ;
-; Average fan-out                             ; 0.75              ;
-+---------------------------------------------+-------------------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimate of Logic utilization (ALMs needed) ; 5             ;
+;                                             ;               ;
+; Combinational ALUT usage for logic          ; 10            ;
+;     -- 7 input functions                    ; 0             ;
+;     -- 6 input functions                    ; 0             ;
+;     -- 5 input functions                    ; 0             ;
+;     -- 4 input functions                    ; 0             ;
+;     -- <=3 input functions                  ; 10            ;
+;                                             ;               ;
+; Dedicated logic registers                   ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 14            ;
+;                                             ;               ;
+; Total DSP Blocks                            ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; gray[0]~input ;
+; Maximum fan-out                             ; 10            ;
+; Total fan-out                               ; 53            ;
+; Average fan-out                             ; 1.39          ;
++---------------------------------------------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |Tarea1                    ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 16   ; 0            ; |Tarea1             ; Tarea1      ; work         ;
-+----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                  ; Entity Name     ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+-----------------+--------------+
+; |Tarea1                           ; 10 (0)              ; 0 (0)                     ; 0                 ; 0          ; 14   ; 0            ; |Tarea1                              ; Tarea1          ; work         ;
+;    |binaryToExcess3:binaryExcess| ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Tarea1|binaryToExcess3:binaryExcess ; binaryToExcess3 ; work         ;
+;    |motorSignal:motor|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Tarea1|motorSignal:motor            ; motorSignal     ; work         ;
+;    |segmentOutput:segment|        ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |Tarea1|segmentOutput:segment        ; segmentOutput   ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -234,37 +233,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "binaryToExcess3:binaryExcess"                                                                                                              ;
-+------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                     ;
-+------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-; bcd  ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "bcd[2..1]" will be connected to GND. ;
-+------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "grayToBinary:grayBinary"                                                                                               ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                                                                ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-; bcd  ; Output ; Warning  ; Output or bidir port (3 bits) is wider than the port expression (1 bits) it drives; bit(s) "bcd[2..1]" have no fanouts ;
-+------+--------+----------+------------------------------------------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 3                           ;
-;     normal            ; 3                           ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 1                           ;
-; boundary_port         ; 16                          ;
+; arriav_lcell_comb     ; 12                          ;
+;     normal            ; 12                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 8                           ;
+; boundary_port         ; 14                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.40                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.33                        ;
 +-----------------------+-----------------------------+
 
 
@@ -282,54 +264,44 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Sun Apr 21 20:31:49 2024
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Apr 25 15:02:54 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Tarea1 -c Tarea1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file graytobinary.sv
-    Info (12023): Found entity 1: grayToBinary File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/grayToBinary.sv Line: 1
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Warning (12019): Can't analyze file -- file grayToBinary.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file tarea1.sv
-    Info (12023): Found entity 1: Tarea1 File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file graytobinary_tb.sv
-    Info (12023): Found entity 1: grayToBinary_tb File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/grayToBinary_tb.sv Line: 3
+    Info (12023): Found entity 1: Tarea1 File: C:/Users/manue/Escritorio/Tarea1_FAC/Tarea1.sv Line: 1
+Warning (12019): Can't analyze file -- file grayToBinary_tb.sv is missing
 Info (12021): Found 1 design units, including 1 entities, in source file binarytoexcess3.sv
-    Info (12023): Found entity 1: binaryToExcess3 File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3.sv Line: 1
+    Info (12023): Found entity 1: binaryToExcess3 File: C:/Users/manue/Escritorio/Tarea1_FAC/binaryToExcess3.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file binarytoexcess3_tb.sv
-    Info (12023): Found entity 1: binaryToExcess3_tb File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/binaryToExcess3_tb.sv Line: 3
+    Info (12023): Found entity 1: binaryToExcess3_tb File: C:/Users/manue/Escritorio/Tarea1_FAC/binaryToExcess3_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file segmentoutput.sv
-    Info (12023): Found entity 1: segmentOutput File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/segmentOutput.sv Line: 2
+    Info (12023): Found entity 1: segmentOutput File: C:/Users/manue/Escritorio/Tarea1_FAC/segmentOutput.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file distancetogray.sv
-    Info (12023): Found entity 1: distanceToGray File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/distanceToGray.sv Line: 1
+    Info (12023): Found entity 1: distanceToGray File: C:/Users/manue/Escritorio/Tarea1_FAC/distanceToGray.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file distancetogray_tb.sv
-    Info (12023): Found entity 1: distanceToGray_tb File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/distanceToGray_tb.sv Line: 3
+    Info (12023): Found entity 1: distanceToGray_tb File: C:/Users/manue/Escritorio/Tarea1_FAC/distanceToGray_tb.sv Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file motorsignal.sv
-    Info (12023): Found entity 1: motorSignal File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/motorSignal.sv Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at Tarea1.sv(22): created implicit net for "bcd" File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 22
+    Info (12023): Found entity 1: motorSignal File: C:/Users/manue/Escritorio/Tarea1_FAC/motorSignal.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file tarea1_tb.sv
+    Info (12023): Found entity 1: Tarea1_tb File: C:/Users/manue/Escritorio/Tarea1_FAC/Tarea1_tb.sv Line: 1
 Info (12127): Elaborating entity "Tarea1" for the top level hierarchy
-Info (12128): Elaborating entity "distanceToGray" for hierarchy "distanceToGray:distanceGray" File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 13
-Info (12128): Elaborating entity "motorSignal" for hierarchy "motorSignal:motor" File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 18
-Info (12128): Elaborating entity "grayToBinary" for hierarchy "grayToBinary:grayBinary" File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 23
-Info (12128): Elaborating entity "binaryToExcess3" for hierarchy "binaryToExcess3:binaryExcess" File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 28
-Info (12128): Elaborating entity "segmentOutput" for hierarchy "segmentOutput:segment" File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 33
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "seg[1]" is stuck at GND File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 6
-    Warning (13410): Pin "seg[2]" is stuck at GND File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 6
-    Warning (13410): Pin "seg[6]" is stuck at VCC File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 6
+Info (12128): Elaborating entity "motorSignal" for hierarchy "motorSignal:motor" File: C:/Users/manue/Escritorio/Tarea1_FAC/Tarea1.sv Line: 11
+Info (12128): Elaborating entity "binaryToExcess3" for hierarchy "binaryToExcess3:binaryExcess" File: C:/Users/manue/Escritorio/Tarea1_FAC/Tarea1.sv Line: 17
+Info (12128): Elaborating entity "segmentOutput" for hierarchy "segmentOutput:segment" File: C:/Users/manue/Escritorio/Tarea1_FAC/Tarea1.sv Line: 22
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "distance[0]" File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 2
-    Warning (15610): No output dependent on input pin "distance[1]" File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 2
-    Warning (15610): No output dependent on input pin "distance[4]" File: C:/Users/alero/Documents/GitHub/Tarea1_FAC/Tarea1.sv Line: 2
-Info (21057): Implemented 16 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 5 input pins
+Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
     Info (21059): Implemented 11 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 4825 megabytes
-    Info: Processing ended: Sun Apr 21 20:32:10 2024
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:33
+    Info (21061): Implemented 10 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4834 megabytes
+    Info: Processing ended: Thu Apr 25 15:03:09 2024
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:21
 
 

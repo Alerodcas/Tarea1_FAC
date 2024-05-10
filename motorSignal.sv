@@ -3,6 +3,6 @@ module motorSignal(
 	 output logic signal
 );
 
-assign signal = gray[2] ^ gray[1];
+assign signal = gray[0] ^ gray[1];
 
 endmodule

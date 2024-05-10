@@ -42,10 +42,10 @@ set_global_assignment -name DEVICE 5CSEMA5F31C6
 set_global_assignment -name TOP_LEVEL_ENTITY Tarea1
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.2
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:12:40  APRIL 21, 2024"
-set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (SystemVerilog)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (SystemVerilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
@@ -62,16 +62,13 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH distanceToGray_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH grayToBinary_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME grayToBinary_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id grayToBinary_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME grayToBinary_tb -section_id grayToBinary_tb
 set_global_assignment -name EDA_TEST_BENCH_NAME binaryToExcess3_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id binaryToExcess3_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME binaryToExcess3_tb -section_id binaryToExcess3_tb
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE segmentOutput.sv
 set_global_assignment -name SYSTEMVERILOG_FILE distanceToGray.sv
 set_global_assignment -name SYSTEMVERILOG_FILE distanceToGray_tb.sv
@@ -82,4 +79,22 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id distanceToGr
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME distanceToGray_tb -section_id distanceToGray_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE distanceToGray_tb.sv -section_id distanceToGray_tb
 set_global_assignment -name SYSTEMVERILOG_FILE motorSignal.sv
+set_location_assignment PIN_AE26 -to seg[0]
+set_location_assignment PIN_AE27 -to seg[1]
+set_location_assignment PIN_AE28 -to seg[2]
+set_location_assignment PIN_AG27 -to seg[3]
+set_location_assignment PIN_AF28 -to seg[4]
+set_location_assignment PIN_AG28 -to seg[5]
+set_location_assignment PIN_AH28 -to seg[6]
+set_location_assignment PIN_AE24 -to motorSig
+set_location_assignment PIN_V16 -to excess[0]
+set_location_assignment PIN_W16 -to excess[1]
+set_location_assignment PIN_V17 -to excess[2]
+set_global_assignment -name SYSTEMVERILOG_FILE Tarea1_tb.sv
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AB21 -to gray[0]
+set_location_assignment PIN_AC23 -to gray[1]
+set_location_assignment PIN_AE23 -to gray[2]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

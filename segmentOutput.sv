@@ -1,6 +1,6 @@
 
 module segmentOutput(input [2:0] num, //Numero en exceso-3
-    output wire [6:0] seg);
+    output logic [6:0] seg);
 
 	wire[6:0] segments1;
 

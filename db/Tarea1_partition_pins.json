@@ -24,6 +24,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg[2]",
+					"strict" : false
+				},
+				{
 					"name" : "seg[3]",
 					"strict" : false
 				},
@@ -36,11 +44,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "distance[3]",
+					"name" : "seg[6]",
 					"strict" : false
 				},
 				{
-					"name" : "distance[2]",
+					"name" : "gray[0]",
+					"strict" : false
+				},
+				{
+					"name" : "gray[1]",
+					"strict" : false
+				},
+				{
+					"name" : "gray[2]",
 					"strict" : false
 				}
 			]
